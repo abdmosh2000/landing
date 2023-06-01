@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 body{
   font-family: 'Poppins', sans-serif;
+  animation: 0.7s ease-in-out 0s 1 slideInLeft;
 }
 .logo{
   color: #455AF7 !important;
@@ -260,6 +261,15 @@ list-style: none;
   .awa img{
     width: 100%;
   }
+  .whyimg img{
+    width: 225px !important;
+   } .why ul{
+    width: 100%;
+   }
+   .why{
+    justify-content: center;
+    align-items: center;
+   }
 }
 
 @media screen and (max-width: 1200px) {
@@ -295,6 +305,9 @@ list-style: none;
 .awa img{
   width: 100%;
 }
+.whyimg img{
+  width: 425px;
+ }
 }
 .btn-cssbuttons {
   --btn-color: #275efe;
@@ -398,3 +411,36 @@ list-style: none;
  .btn-cssbuttons:hover ul li:nth-child(3) a {
   transition-delay: 0.25s;
  }
+ .why ul li h6{
+  color: #275efe;
+ }
+
+ .why ul li p{
+  font-size: 13px;
+ }
+ .whyimg img{
+  width: 625px;
+ }
+ .whats img{
+  width: 100%;
+ }
+ .adds img{
+  width: 100%;
+ }
+ .edit img{
+  width: 100%;
+ }
+ .assign img{
+  width: 50%;
+ }
+ .assign{
+  display: flex;
+ }
+ @keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
