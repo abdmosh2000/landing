@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 body{
   font-family: 'Poppins', sans-serif;
-  animation: 0.7s ease-in-out 0s 1 slideInLeft;
 }
 .logo{
   color: #455AF7 !important;
@@ -270,6 +269,14 @@ list-style: none;
     justify-content: center;
     align-items: center;
    }
+   .button-groub{
+    flex-direction: row !important;
+    width: 60%;
+    height: 70px !important;
+    margin-right: 0;
+    justify-content: center !important;
+    margin: 10px 0;
+   }
 }
 
 @media screen and (max-width: 1200px) {
@@ -436,11 +443,38 @@ list-style: none;
  .assign{
   display: flex;
  }
- @keyframes slideInLeft {
-  0% {
-    transform: translateX(-100%);
-  }
-  100% {
-    transform: translateX(0);
-  }
+ .media {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: 2px solid white;
+
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  border-style: dashed;
+  border-radius: 50%;
+  justify-content: space-between;
+  
+}
+.button-groub {
+  justify-content: space-between;
+  margin-right: 100px;
+  flex-direction: column;
+  border: 3px dashed #616368;
+  border-radius: 14px;
+  padding: 15px 10px;
+  height: 220px;
+}
+.media img {
+  padding-top: 10px;
+  width: 20px;
+  display: block;
+  margin: auto;
+}
+.contactus{
+  justify-content: space-between;
+  flex-wrap: wrap;
+
+}
+.pic img{
+  width: 70%;
 }
